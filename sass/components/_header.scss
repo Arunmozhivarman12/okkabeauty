@@ -1,0 +1,115 @@
+@import "./../variables";
+
+
+
+
+.logo{
+    width:135px !important;
+    height: auto !important;
+}
+
+
+.search-form {
+    position: relative;
+   
+}
+
+.search-form input{
+text-indent: 30px;
+font-style: italic;
+}
+
+.search-icon {
+    position: absolute;
+    top: 7px;
+    left: 18px;
+}
+
+
+
+.cart-link{
+    position: relative;
+}
+
+.cart_items_number{
+position: absolute;
+padding: 10px 6px;
+top: -8px;
+right: -11px;
+border-radius: 50%;
+}
+
+
+// custom dropdown
+
+.dropdown-1 .dropdown-menu {
+    position: absolute !important;
+    top: 38px !important;
+    background-color: #F9F9F9;
+    border:none;
+    border-radius: 0;
+}
+
+.dropdown-1:hover .dropdown-menu {
+    display: block ;
+}
+
+.dropdown-2:hover .dropdown-menu {
+    display: block !important;
+}
+
+.dropdown-1:hover .dropdown-2 .dropdown-menu {
+    display: none ;
+}
+
+.dropdown-2 .dropdown-menu:hover{
+    display: block !important;
+}
+
+.dropdown-2 .dropdown-menu {
+    position: absolute !important;
+    width: 280px !important;
+    top: -13px !important;
+    left: auto !important;
+    right: -280px !important;
+}
+
+
+.dropdown-2 .dropdown-toggle {
+    padding:0 !important;
+}
+
+.dropdown-1 #basic-nav-dropdown{
+    color:black !important;
+}
+
+a.ditem-1.dropdown-item {
+padding-right:0;
+margin-right:10px;
+
+}
+
+.brand-dropdown .dropdown-menu{
+    width:600px !important; 
+   position: absolute !important;
+   padding-right: 10px;
+   left:-400px !important;
+}
+
+.brand-dropdown .dropdown-menu .dropdown-item{
+    width:100px !important;
+    white-space: normal !important;
+}
+
+.dropdown-1 #basic-nav-dropdown:hover{
+background-color: #333;
+color:white !important;
+}
+
+.dropdown-2 #basic-nav-dropdown:hover{
+    background-color:transparent !important;
+    color:black !important;
+    }
+
+
+

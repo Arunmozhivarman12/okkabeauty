@@ -1,0 +1,44 @@
+// container 
+
+
+
+.grid {
+  display: grid;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: flex;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.container-slider {
+  width: 1200px !important;
+  padding: 0;
+  margin: auto;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.w-auto {
+  width: max-content !important;
+}
+
+@media screen and (min-width: 1500px) {
+
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1200px !important;
+  }
+}

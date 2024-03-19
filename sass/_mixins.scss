@@ -1,0 +1,10 @@
+
+
+@mixin btn{
+   
+    cursor: pointer;
+    background-color:$transparent;
+     border:1px solid $primary-color;
+    font-weight: 700;
+}
+

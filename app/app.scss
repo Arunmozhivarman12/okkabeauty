@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import "../sass/components/header";
+@import "../sass/components/home";
+
+@import '../sass/variables';
+@import '../sass/mixins';
+@import '../sass/loops';  
+@import '../sass/buttons'; 
+@import '../sass/custom';
+
+h1,h2,h3,h4,h5,h6,span,a,p,input,button,div{
+    font-family: var(--font-poppins);
+}

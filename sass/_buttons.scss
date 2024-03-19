@@ -1,0 +1,37 @@
+.btn-header {
+    @include btn;
+    font-weight: 600 !important;
+    background-color: $primary-color !important;
+    font-size: 14px !important;
+    border:0 !important;
+    height: 39px;
+    border-radius: 0px 20px 20px 0px!important;
+}
+
+.btn-about {
+    @include btn;
+    padding: 6px 15px;
+    color:$primary-color;
+    border-radius:5px ;
+}
+
+
+.btn-slide {
+    @include btn;
+    background-color: #eeeaea;
+    padding: 13px 50px 12px 50px;
+}
+
+.btn-add_cart{
+    padding: 4px 0px;
+
+    &:hover{
+       background-color: $primary-color !important;
+       color: white; 
+       cursor: pointer;
+    }
+}
+
+button{
+    cursor: pointer;
+}

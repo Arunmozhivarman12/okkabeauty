@@ -1,0 +1,28 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    padding: 8px;
+   
+  }
+
+  th{
+    font-size: 13px;
+    text-align: left;
+    font-weight: 800;
+  }
+  
+
+  .cart_product_name{
+-webkit-line-clamp: 2;
+text-overflow: ellipsis;
+overflow: hidden;
+-webkit-box-orient: vertical;
+display: -webkit-box;
+  }
+
+  .cart_table{
+    grid-template-columns: 2fr 1fr;
+  }

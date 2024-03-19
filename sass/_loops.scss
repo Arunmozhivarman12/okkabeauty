@@ -1,0 +1,263 @@
+$color: (
+  "Primary":$primary-color,
+  "border":$border-color,
+  "secondary-1":$secondary,
+  "white":$head-color,
+  "transparent":$transparent,
+  "danger":$danger,
+  "grey":$grey,
+  "grey2":$grey2,
+  "light-blue":$light-blue,
+  "black":$black,
+  "orange":$orange
+);
+
+@each $key, $val in $color {
+  .text-#{$key} {
+    color: $val;
+  }
+
+  .bg-#{$key} {
+    background-color: $val;
+  }
+
+  .border-#{$key} {
+    border: 1px solid $val;
+  }
+
+
+  .bb-#{$key}-1 {
+    border-bottom: 1px solid $val;
+  }
+
+  .bb-#{$key}-2 {
+    border-bottom: 2px solid $val;
+  }
+
+  .bb-#{$key}-3 {
+    border-bottom: 3px solid $val;
+  }
+
+  .bt-#{$key} {
+    border-top: 1px solid $val;
+  }
+}
+
+
+
+$font: (
+  "m":20px,
+  "8":12px,
+  "7":13px,
+  "6":14px,
+  "5":16px,
+  "4":25px,
+  "3":30px,
+  "2":37px,
+  "1":46px
+);
+
+@each $key, $val in $font {
+  .fse-#{$key} {
+    font-size: $val;
+  }
+
+  @media screen and (max-width:600px) {
+    .fse-sm-#{$key} {
+      font-size: $val/2 !important;
+    }
+  }
+
+}
+
+$align: (
+  "start":start,
+  "center":center,
+  "right":right,
+  "end":end,
+  "between":space-between,
+  "around":space-around
+);
+
+@each $key, $val in $align {
+  .text-#{$key} {
+    text-align: $val;
+  }
+
+  .align-#{$key} {
+    align-items: $val;
+  }
+
+
+}
+
+$line-height: (
+  "3":30px,
+  "2":35px,
+  "1":60px
+);
+
+@each $key, $val in $line-height {
+  .lh-#{$key} {
+    line-height: $val;
+  }
+}
+
+
+$fw: (
+  "7":900,
+  "6":800,
+  "5":700,
+  "4":600,
+  "3":500,
+  "2":400,
+  "1":300
+);
+
+@each $key, $val in $fw {
+  .fw-#{$key} {
+    font-weight: $val;
+  }
+}
+
+$width: 1%;
+
+
+@for $i from 1 through 100 {
+  .wc-#{$i} {
+    width: $i * $width;
+  }
+
+  @media screen and (max-width:600px) {
+    .w-sm-#{$i} {
+      width: $i * $width !important;
+    }
+  }
+}
+
+$b-r: 1px;
+
+
+@for $i from 0 through 100 {
+  .br-#{$i} {
+    border-radius: $i * $b-r;
+  }
+}
+
+$height: 1px;
+
+
+@for $i from 1 through 1000 {
+  .h-#{$i} {
+    height: $i * $height;
+  }
+}
+
+
+@for $i from 1 through 100 {
+  .col-#{$i} {
+    grid-template-columns: repeat($i, 1fr);
+  }
+}
+
+$gap: 1px;
+
+@for $i from 1 through 100 {
+  .gap-#{$i} {
+    column-gap: $i*$gap ;
+  }
+}
+
+// $basic-spacing: 4px;
+
+// $utilities : ("margin":("prefix":"m",
+//     "values":("0":0,
+//       "1":$basic-spacing * 2,
+//       "2":$basic-spacing * 4,
+//       "3":$basic-spacing * 6,
+//       "4":$basic-spacing * 8,
+//       "5":$basic-spacing * 10,
+//     )),
+//   "margin-left":("prefix":"ms",
+//     "values":("0":0,
+//       "1":$basic-spacing * 2,
+//       "2":$basic-spacing * 4,
+//       "3":$basic-spacing * 6,
+//       "4":$basic-spacing * 8,
+//       "5":$basic-spacing * 10,
+//     )),
+//   "margin-right":("prefix":"me",
+//     "values":("0":0,
+//       "1":$basic-spacing * 2,
+//       "2":$basic-spacing * 4,
+//       "3":$basic-spacing * 6,
+//       "4":$basic-spacing * 8,
+//       "5":$basic-spacing * 10,
+//     )),
+//   "margin-bottom":("prefix":"mb",
+//     "values":("0":0,
+//       "1":$basic-spacing * 2,
+//       "2":$basic-spacing * 4,
+//       "3":$basic-spacing * 6,
+//       "4":$basic-spacing * 8,
+//       "5":$basic-spacing * 10,
+//     )),
+//   "margin-top":("prefix":"mt",
+//     "values":("0":0,
+//       "1":$basic-spacing * 2,
+//       "2":$basic-spacing * 4,
+//       "3":$basic-spacing * 6,
+//       "4":$basic-spacing * 8,
+//       "5":$basic-spacing * 10,
+//     )),
+//   "padding-left":("prefix":"ps",
+//     "values":("0":0,
+//       "1":$basic-spacing * 2,
+//       "2":$basic-spacing * 4,
+//       "3":$basic-spacing * 6,
+//       "4":$basic-spacing * 8,
+//       "5":$basic-spacing * 10,
+//     )),
+//   "padding":("prefix":"p",
+//     "values":("0":0,
+//       "1":$basic-spacing * 2,
+//       "2":$basic-spacing * 4,
+//       "3":$basic-spacing * 6,
+//       "4":$basic-spacing * 8,
+//       "5":$basic-spacing * 10,
+//     )),
+//   "padding-top":("prefix":"pt",
+//     "values":("0":0,
+//       "1":$basic-spacing * 2,
+//       "2":$basic-spacing * 4,
+//       "3":$basic-spacing * 6,
+//       "4":$basic-spacing * 8,
+//       "5":$basic-spacing * 10,
+//     )),
+//   "padding-right":("prefix":"pe",
+//     "values":("0":0,
+//       "1":$basic-spacing * 2,
+//       "2":$basic-spacing * 4,
+//       "3":$basic-spacing * 6,
+//       "4":$basic-spacing * 8,
+//       "5":$basic-spacing * 10,
+//     )),
+//   "padding-bottom":("prefix":"pb",
+//     "values":("0":0,
+//       "1":$basic-spacing * 2,
+//       "2":$basic-spacing * 4,
+//       "3":$basic-spacing * 6,
+//       "4":$basic-spacing * 8,
+//       "5":$basic-spacing * 10,
+//     )));
+
+// @each $key, $val in $utilities {
+//   $prefix: map-get($val, "prefix");
+//   $value: map-get($val, "values");
+
+//   @each $prop, $vall in $value {
+//     .#{$prefix}-#{$prop} {
+//       #{$key}: $vall ;
+//     }
+//   }
+// }
