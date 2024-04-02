@@ -2,10 +2,11 @@
 const nextConfig = {
     experimental: { esmExternals: 'loose' },
     images:{
-        domains:["okkabeauty.com"]
+        domains:["www.okkabeauty.com"]
     }
 };
 
 
 
-export default nextConfig;
+module.exports =  nextConfig;
+    

@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "category": "skincare",
+        "url": "https://www.okkabeauty.com/wp-content/uploads/2024/02/SKINCARE.png"
+    },
+    {
+        "id": 2,
+        "category": "clothing",
+        "url": "https://www.okkabeauty.com/wp-content/uploads/2024/02/CLOTHING.png"
+    },
+    {
+        "id": 3,
+        "category": "accessories",
+        "url": "https://www.okkabeauty.com/wp-content/uploads/2024/02/ACCESSORIES.png"
+    },
+    {
+        "id": 4,
+        "category": "makeup",
+        "url": "https://www.okkabeauty.com/wp-content/uploads/2024/02/MAKEUP.png"
+    }
+]

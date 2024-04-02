@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "category": "sunscreen",
+        "url": "https://www.okkabeauty.com/wp-content/uploads/2022/06/250-%C3%97-250-px-3-6-600x600.jpg"
+    },
+    {
+        "id": 2,
+        "category": "toner",
+        "url": "https://www.okkabeauty.com/wp-content/uploads/2022/06/250-%C3%97-250-px-3-7-600x600.jpg"
+    },
+    {
+        "id": 3,
+        "category": "treatment",
+        "url": "https://www.okkabeauty.com/wp-content/uploads/2022/06/250-%C3%97-250-px-3-8-600x600.jpg"
+    },
+    {
+        "id": 4,
+        "category": "cleanser",
+        "url": "https://www.okkabeauty.com/wp-content/uploads/2022/06/250-%C3%97-250-px-3-1-600x600.jpg"
+    },
+    {
+        "id": 5,
+        "category": "exfoliator",
+        "url": "https://www.okkabeauty.com/wp-content/uploads/2022/06/250-%C3%97-250-px-3-2-600x600.jpg"
+    },
+    {
+        "id": 6,
+        "category": "Mask",
+        "url": "https://www.okkabeauty.com/wp-content/uploads/2022/06/250-%C3%97-250-px-3-3-600x600.jpg"
+    },
+    {
+        "id": 7,
+        "category": "moisturizer",
+        "url": "https://www.okkabeauty.com/wp-content/uploads/2022/06/250-%C3%97-250-px-3-4-600x600.jpg"
+    },
+    {
+        "id": 8,
+        "category": "serum",
+        "url": "https://www.okkabeauty.com/wp-content/uploads/2022/06/250-%C3%97-250-px-3-5-600x600.jpg"
+    }
+]

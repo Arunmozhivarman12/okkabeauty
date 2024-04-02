@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import './app.scss';
 import Header from "./components/Header";
+import 'swiper/css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -23,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" >
       <body className={`${poppins.variable}`}>
       <Header/>
         {children}

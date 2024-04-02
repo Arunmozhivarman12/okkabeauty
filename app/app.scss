@@ -13,5 +13,5 @@
 @import '../sass/custom';
 
 h1,h2,h3,h4,h5,h6,span,a,p,input,button,div{
-    font-family: var(--font-poppins);
+    font-family: var(--font-poppins) !important;
 }

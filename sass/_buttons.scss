@@ -1,37 +1,29 @@
-.btn-header {
+.btn-add_cart {
+    padding: 8px 14px;
     @include btn;
-    font-weight: 600 !important;
-    background-color: $primary-color !important;
-    font-size: 14px !important;
-    border:0 !important;
-    height: 39px;
-    border-radius: 0px 20px 20px 0px!important;
-}
+    overflow: hidden;
+    position: relative;
 
-.btn-about {
-    @include btn;
-    padding: 6px 15px;
-    color:$primary-color;
-    border-radius:5px ;
-}
+    .addcart-icon {
+        position: absolute;
+        transform: translate(-10px, 25px);
+        transition: all 0.2s ease;
+    }
 
+    &:hover p {
+        transform: translate(0, -25px);
+    }
 
-.btn-slide {
-    @include btn;
-    background-color: #eeeaea;
-    padding: 13px 50px 12px 50px;
-}
+    &:hover .addcart-icon {
+        transform: translate(-10px,-20px);
 
-.btn-add_cart{
-    padding: 4px 0px;
+    }
 
-    &:hover{
-       background-color: $primary-color !important;
-       color: white; 
-       cursor: pointer;
+    p {
+        transition: all 0.2s ease;
     }
 }
 
-button{
+button {
     cursor: pointer;
 }

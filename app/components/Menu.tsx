@@ -42,7 +42,7 @@ export default function Menu({ menudata, Branddata }: any) {
                     {isDropdown(menu2) ? (<>
                       <NavDropdown title={`${menu2.title.rendered}`} id="basic-nav-dropdown" renderMenuOnMount={true} className="dropdown-2 fse-6">
                         {menudata.filter((fmenu: any) => fmenu.parent === menu2.id).map((menu3: any) => (
-                          <><NavDropdown.Item href="#" className="fse-6">{menu3.title.rendered}</NavDropdown.Item></>
+                          <NavDropdown.Item href="#" className="fse-6" key={menu3.id}>{menu3.title.rendered}</NavDropdown.Item>
                         ))}
                       </NavDropdown>
                     </>) : (<>{menu2.title.rendered}</>)}
@@ -53,7 +53,7 @@ export default function Menu({ menudata, Branddata }: any) {
                 <NavDropdown title={Brand.title.rendered} id="basic-nav-dropdown" className="ms-4 me-4 dropdown-1 brand-dropdown fse-6 fw-3" renderMenuOnMount={true}>
                   <Row>
                     {menudata.filter((menu: any) => menu.parent === Brand.id).map((submenu: any) => (
-                      <Col lg={2} className="mb-3">
+                      <Col lg={2} className="mb-3" key={submenu.id}>
                         <h6 className="fse-6 text-left ms-4">{submenu.title.rendered}</h6>
                         {menudata.filter((fmenu: any) => fmenu.parent === submenu.id).map((menu3: any) => (
                           <><NavDropdown.Item href="#" className="fse-8">{menu3.title.rendered}</NavDropdown.Item></>

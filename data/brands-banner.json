@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "Brand": "beauty of joseon",
+        "url": "https://www.okkabeauty.com/wp-content/uploads/2023/11/1.png"
+    },
+    {
+        "id": 2,
+        "Brand": "Kaine",
+        "url": "https://www.okkabeauty.com/wp-content/uploads/2023/11/2-3.png"
+    },
+    {
+        "id": 3,
+        "Brand": "somebymi",
+        "url": "https://www.okkabeauty.com/wp-content/uploads/2023/11/3-3.png"
+    },
+    {
+        "id": 4,
+        "Brand": "amuse",
+        "url": "https://www.okkabeauty.com/wp-content/uploads/2023/11/4-3.png"
+    }
+]
