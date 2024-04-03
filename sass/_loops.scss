@@ -76,7 +76,8 @@ $align: (
   "right":right,
   "end":end,
   "between":space-between,
-  "around":space-around
+  "around":space-around,
+  "justify":justify
 );
 
 @each $key, $val in $align {
