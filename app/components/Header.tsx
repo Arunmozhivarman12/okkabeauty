@@ -19,7 +19,7 @@ async function fetchMenu() {
     const username = process.env.REST_API_USERNAME;
     const password = process.env.REST_API_PASSWORD;
 
-    const res = await fetch(`${siteUrl}/wp-json/wp/v2/menu-items?menus=1213 `, {
+    const res = await fetch(`${siteUrl}/wp-json/wp/v2/menu-items?menus=1213&_fields=title,id,parent`, {
         cache: 'no-store',
         headers: {
             Authorization: `Basic ${Buffer.from(`${username}:${password}`).toString('base64')}`
@@ -35,7 +35,7 @@ async function fetchBrand() {
     const username = process.env.REST_API_USERNAME;
     const password = process.env.REST_API_PASSWORD;
 
-    const res = await fetch(`${siteUrl}/wp-json/wp/v2/menu-items?menus=1213&page=2`, {
+    const res = await fetch(`${siteUrl}/wp-json/wp/v2/menu-items?menus=1213&page=2&_fields=title,id,parent`, {
         cache: 'no-store',
         headers: {
             Authorization: `Basic ${Buffer.from(`${username}:${password}`).toString('base64')}`
