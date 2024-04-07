@@ -38,15 +38,15 @@ export default function Menu({ menudata, Branddata }: any) {
             <Nav className="me-auto">
               {primaryMenu.map((menu: any) => (
                 <NavDropdown title={`${menu.title.rendered}`} id="basic-nav-dropdown" key={menu.id} className="ms-4 me-4 dropdown-1 fse-6 fw-3" renderMenuOnMount={true}>
-                  {menudata.filter((fmenu: any) => fmenu.parent === menu.id).map((menu2: any) => (<NavDropdown.Item href="/" key={menu2.id} className="ditem-1 text-black fse-6">
-                    {isDropdown(menu2) ? (<> 
-                      <NavDropdown title={`${menu2.title.rendered}`} id="basic-nav-dropdown" renderMenuOnMount={true} className="dropdown-2 fse-6">
+                  {menudata.filter((fmenu: any) => fmenu.parent === menu.id).map((menu2: any) => (<div  key={menu2.id} className="ditem-1 text-black fse-6 fw-2">
+                    {isDropdown(menu2) ? (
+                      <NavDropdown title={`${menu2.title.rendered}`} id="basic-nav-dropdown" renderMenuOnMount={true} className="dropdown-2 fse-6 ps-3 pt-1 pb-1">
                         {menudata.filter((fmenu: any) => fmenu.parent === menu2.id).map((menu3: any) => (
-                          <NavDropdown.Item href="/" className="fse-6" key={menu3.id}>{menu3.title.rendered}</NavDropdown.Item>
+                          <NavDropdown.Item href="/" key={menu3.id} className="fse-6">{menu3.title.rendered}</NavDropdown.Item>
                         ))}
                       </NavDropdown>
-                    </>) : (<>{menu2.title.rendered}</>)}
-                  </NavDropdown.Item>))}    
+                   ) : (<NavDropdown.Item href="/">{menu2.title.rendered}</NavDropdown.Item>)}
+                  </div>))}
                 </NavDropdown>
               ))}
               {Brands.map((Brand: any) => (
