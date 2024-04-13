@@ -22,6 +22,7 @@ async function fetchProducts() {
         'regular_price',
         'sale_price',
         'images',
+        'price'
     ];
 
     const res = await api.get("products", { per_page: 45, status: "publish", stock_status: "instock", fields: fieldsToFetch.join(','), category: 535 })

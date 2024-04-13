@@ -17,15 +17,16 @@ async function fetchProducts() {
 
     const fieldsToFetch = [
         'id',
-        'name',
-        'price',
-        'regular_price',
-        'sale_price',
-        'images',
-        'price'
+        'reviewer',
+        'verified',
+        'rating',
+        'date_created',
+        'review',
+        'product_id',
+        'product_name'
     ];
 
-    const res = await api.get("products", { per_page: 45, status: "publish", stock_status: "instock", fields: fieldsToFetch.join(','), category: 1144 })
+    const res = await api.get("products/reviews", { per_page: 40, status: "approved", fields: fieldsToFetch.join(',')})
     const data = await res.data;
     return data;
 }
