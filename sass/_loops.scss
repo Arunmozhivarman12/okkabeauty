@@ -7,6 +7,7 @@ $color: (
   "danger":$danger,
   "grey":$grey,
   "grey2":$grey2,
+  "theme":$theme,
   "light-blue":$light-blue,
   "black":$black,
   "orange":$orange
@@ -139,11 +140,16 @@ $width: 1%;
 }
 
 $b-r: 1px;
+$brp:1%;
 
 
 @for $i from 0 through 100 {
   .br-#{$i} {
     border-radius: $i * $b-r;
+  }
+
+  .brp-#{$i}{
+    border-radius: $i * $brp;
   }
 }
 

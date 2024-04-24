@@ -27,3 +27,9 @@
 button {
     cursor: pointer;
 }
+
+.form-btn{
+    @include btn;
+    padding: 8px 30px;
+
+ }

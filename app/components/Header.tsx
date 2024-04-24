@@ -50,8 +50,10 @@ async function fetchBrand() {
 
 export default async function Header() {
 
-    const MenuData = await fetchMenu();
-    const Branddata = await fetchBrand();
+    const MenuDataPromise =  fetchMenu();
+    const BrandDataPromise =  fetchBrand();
+
+    const [MenuData,BrandData] = await Promise.all([MenuDataPromise,BrandDataPromise])
     
 
     return (
@@ -83,7 +85,7 @@ export default async function Header() {
                         <Image src={"https://www.okkabeauty.com/wp-content/uploads/2022/04/Black.svg"} alt={"logo"} width={160} height={80} className="logo" priority />
                     </Col>
                     <Col className="ps-0 pe-0 d-flex justify-content-center align-center" lg={7}>
-                    <Menu menudata={MenuData} Branddata={Branddata}/>
+                    <Menu menudata={MenuData} Branddata={BrandData}/>
                     
                     </Col>
                     <Col className="ps-0 pe-0 d-flex justify-content-end align-center" lg={3}>

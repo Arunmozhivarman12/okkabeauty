@@ -1,0 +1,35 @@
+
+
+[
+    {
+        "id":1,
+        "image":"../password.png",
+        "head":"Authentic Products",
+        "tagline":"All of our products are 100% authentic"
+    },
+    {
+        "id":2,
+        "image":"../delivery-car.png",
+        "head":"Fast Delivery",
+        "tagline":"On All Orders"
+    },
+    {
+        "id":3,
+        "image":"../credit-card.png",
+        "head":"Secure Payment",
+        "tagline":"American Express, Visa, MasterCard"
+    },
+    {
+        "id":4,
+        "image":"../replacement.png",
+        "head":"Easy Replacement",
+        "tagline":"Quick Service and Fast Customer Support"
+    },
+    {
+        "id":5,
+        "image":"../service.png",
+        "head":"Responsive Customer Support",
+        "tagline":"Quick Service and Fast Customer Support"
+    }
+    
+]

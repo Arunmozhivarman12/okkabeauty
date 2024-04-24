@@ -1,6 +1,6 @@
 'use client'
 
-import { Col, Container, Row } from "react-bootstrap";
+import {  Container } from "react-bootstrap";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
@@ -9,8 +9,6 @@ import 'swiper/css/autoplay';
 import 'swiper/css/pagination';
 import { GoShareAndroid } from "react-icons/go";
 import Link from "next/link";
-import { useState, useEffect } from 'react';
-import dynamic from "next/dynamic";
 
 
 

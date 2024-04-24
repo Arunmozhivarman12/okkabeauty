@@ -4,6 +4,7 @@ import './app.scss';
 import Header from "./components/Header";
 import 'swiper/css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Footer from "./components/Footer";
 
 
 const poppins = Poppins({
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body className={`${poppins.variable}`}>
       <Header/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

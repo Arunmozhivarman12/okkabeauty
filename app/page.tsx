@@ -1,13 +1,16 @@
 import BeautyBestSellers from "./components/BeautyBestSellers";
 import Beauty from "./components/BeautyNewarrivals";
+import Brands from "./components/Brands";
 import Collagen from "./components/CollagenBanner";
 import Deals from "./components/Deals";
 import Fashion from "./components/FashionNewarrivals";
 import HomeBanner from "./components/Home-banner";
 import Blogs from "./components/Magazine";
+import CustomerReviews from "./components/Reviews";
 import { SkinRoutine } from "./components/SkinRoutine";
 import SkinType from "./components/SkinTypeBanner";
 import Trending from "./components/Trending-brands";
+import Whyus from "./components/Whyus";
 import Promobanner from "./components/productPromoBanner";
 import Price from "./components/underprice-banner";
 
@@ -42,6 +45,9 @@ export default async function Home() {
       <Collagen/>
       <SkinType/>
       <Blogs/>
+      <CustomerReviews/>
+      <Brands/>
+      <Whyus/>
     </main>
   );
 }

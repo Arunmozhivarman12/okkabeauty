@@ -1,6 +1,9 @@
 import WooCommerceRestApi from "@woocommerce/woocommerce-rest-api";
-import Productcomponent from "./ProductComponent";
 import { Container } from "react-bootstrap";
+import dynamic from "next/dynamic";
+const ReviewComponent = dynamic(() => import('./ReviewComponent'), { ssr: false })
+
+
 
 
 
@@ -13,7 +16,7 @@ const api = new WooCommerceRestApi({
     version: "wc/v3"
 });
 
-async function fetchProducts() {
+async function fetchReviews() {
 
     const fieldsToFetch = [
         'id',
@@ -26,20 +29,20 @@ async function fetchProducts() {
         'product_name'
     ];
 
-    const res = await api.get("products/reviews", { per_page: 40, status: "approved", fields: fieldsToFetch.join(',')})
+    const res = await api.get("products/reviews", { per_page: 40, status: "approved", fields: fieldsToFetch.join(',') })
     const data = await res.data;
     return data;
 }
 
 
-export default async function Fashion() {
-    const products = await fetchProducts();
- 
-    return (
-        <Container className="mt-5">
+export default async function CustomerReviews() {
+    const reviews = await fetchReviews();
 
-<h2 className="fse-4 fw-4 text-center">FASHION NEW ARRIVALS</h2>
-            <Productcomponent products={products}/>
+    return (
+        <Container fluid className="mt-5">
+
+            <h2 className="fse-4 fw-4 text-center">LET THE CUSTOMER SPEAK ON OUR BEHALF</h2>
+            <ReviewComponent ratings={reviews} />
         </Container>
     )
 } 

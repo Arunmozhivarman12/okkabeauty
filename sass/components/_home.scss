@@ -142,3 +142,57 @@ overflow: hidden;
    left: 10px;
    width: 50px;
 }
+
+.review-thumbnail {
+   text-transform: uppercase;
+   width: 55px;
+   display: flex;
+   position: relative;
+   height: 55px;
+   color:#4D5D64;
+   justify-content: center;
+   align-items: center;
+}
+
+.thumbnail-wrap{
+   display: flex;
+   align-items: center;
+   
+}
+
+
+.verified{
+   position: absolute;
+   right: 0;
+   color: #31856C;
+   bottom: 0;
+}
+
+.verified2{
+   color: #31856C;
+}
+
+.whyus-circle{
+   width:70px;
+   height: 70px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+left: 50%;
+transform: translateX(-50%);
+position: absolute;
+ top: -40px;
+}
+
+.whyus-div{
+   position: relative;
+   height: 175px;
+}
+
+
+
+li{
+   list-style-type: none;
+}
+

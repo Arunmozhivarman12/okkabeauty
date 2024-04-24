@@ -1,0 +1,166 @@
+
+
+<style>
+       
+
+    .nodes {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        text-align: center;
+        gap: 40px;
+        position: relative;
+    }
+
+    .nodes::before{
+        content: "";
+        width:77%;
+        top: 16px;
+        height: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        background-color: #474747;
+    }
+
+    .circle {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        position:absolute ;
+        left:50% ;
+        top:50% ;
+        transform:translate(-50%,-50%) ;
+        display: inline-block;
+    }
+
+    .b-circle {
+        border-radius: 50%;
+        height: 32px;
+        width: 32px;
+        background-color: white;
+        display: inline-block;
+        position: relative;
+    }
+
+    .b-circle::after{
+        width:2px;
+        position: absolute;
+        content:"";
+        left: 50%;
+        display: block;
+        transform: translateX(-50%);
+        height: 100px;
+        background-color:#474747 ;
+        z-index:-1;
+    }
+
+    .node:first-child .b-circle,
+    .node:nth-child(3) .b-circle {
+        border: 1px solid #2576B5;
+    }
+
+    .node:last-child .b-circle,
+    .node:nth-child(2) .b-circle {
+        border: 1px solid #EE315B;
+    }
+
+    .node-heading {
+        color: white;
+        padding: 8px 0;
+        border-radius: 5px 5px 0 0;
+        font-size: 20px;
+        margin-top: 50px;
+    }
+
+    .parent {
+        text-align: center;
+        background-color: #474747;
+        color: white;
+        font-size: 20px;
+        margin: auto;
+        margin-bottom: 80px;
+        padding: 8px 30px;
+        border-radius: 3px;
+        width: max-content;
+        position: relative;
+    }
+
+    .parent::after{
+        width:2px;
+        position: absolute;
+        content:"";
+        left: 50%;
+        display: block;
+        transform: translateX(-50%);
+        height: 100px;
+        background-color:#474747 ;
+    }
+
+    .nodes::after{
+        content:"";
+        position: absolute;
+        top: 9px;
+        height: 15px;
+        width: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color:#474747 ;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .node:first-child .node-heading,
+    .node:nth-child(3) .node-heading,
+    .node:first-child .circle,
+    .node:nth-child(3) .circle {
+        background-color: #2576B5;
+    }
+
+    .node:last-child .node-heading,
+    .node:nth-child(2) .node-heading,
+    .node:last-child .circle,
+    .node:nth-child(2) .circle {
+        background-color: #EE315B;
+    }
+
+    .node-content {
+        background-color: #F1F1F1;
+        padding: 20px;
+        text-align: justify;
+        line-height: 25px;
+        border-radius: 0 0 5px 5px;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    }
+    
+  
+</style>
+
+
+
+<div class="subsidiaries">
+    <div class="parent">
+        Many Hats
+    </div>
+    <div class="nodes">
+        <div class="node">
+            <span class="b-circle"><span class="circle"></span></span>
+            <div class="node-heading">Many Hats Renovation</div>
+            <div class="node-content">Offering versatile solutions for all your renovation needs, ensuring every aspect of your project is expertly handled with care and precision.</div>
+        </div>
+        <div class="node">
+            <span class="b-circle"><span class="circle"></span></span>
+            <div class="node-heading">Durham Dumpster</div>
+            <div class="node-content">Providing reliable dumpster rental services in Durham, simplifying waste management for construction, renovation, and clean-up projects of all sizes.</div>
+        </div>
+        <div class="node">
+            <span class="b-circle"><span class="circle"></span></span>
+            <div class="node-heading">Durham Remodel</div>
+            <div class="node-content">We specialize in turning homes and spaces in Durham into breathtaking, functional environments customized to match your distinct style and requirements.</div>
+        </div>
+        <div class="node">
+            <span class="b-circle"><span class="circle"></span></span>
+            <div class="node-heading">UWR Group of the Triangle</div>
+            <div class="node-content">A trusted consortium dedicated to delivering comprehensive real estate solutions, including, remodelling, and property management services in the Triangle area.</div>
+        </div>
+    </div>
+    </div>
